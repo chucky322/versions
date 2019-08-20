@@ -1,0 +1,54 @@
+.header_name 	{
+    font-size: 25px;
+    margin-top: 5%;
+}
+.buttons_inside {
+    display: flex;
+    justify-content: center;
+}
+.buttons_inside p{
+    padding-left: 15%;
+}
+
+.btn-info {
+margin: 6px 0;
+}
+
+.btn-warning{
+margin: 6px 0;
+}
+.btn-default{
+margin: 6px 0;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+.dual-list .list-group {
+	margin-top: 8px;
+}
+
+.list-left li, .list-right li {
+	cursor: pointer;
+}
+
+.list-arrows {
+	padding-top: 100px;
+}
+
+.list-arrows button {
+	margin-bottom: 20px;
+}
+.modal fade
+{
+	width: 1000px;
+	margin: auto;
+}
