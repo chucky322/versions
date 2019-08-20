@@ -90,7 +90,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 											<label for="select_option">Тип 1:</label>
 											<select class="form-control" id="select_option" name="select_option">
 												
-												<!-----php---><?php include 'config_1.php'; ?>
+												<!-----php---><?php include 'get_release_type.php'; ?>
 											</select><br>
 											<label for="version">Номер версии:</label>
 											<input type="text" class="form-control" id="version" data-mask="0.0.0" required></input>
@@ -502,7 +502,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 						$.ajax
 						(
 							{
-								url: "request.php",
+								url: "get_release_versions_by_release_type1_id.php",
 								method: "POST",
 								dataType: "text",
 								data: {"RELEASE_TYPE1_ID": document.getElementById("select_option").value},
@@ -1078,12 +1078,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 					}
 					copy_cat_str_dict_ver_id=listArray.join();
 						//console.log(copy_cat_str_dict_ver_id);
-						alert(copy_cat_str_dict_ver_id)
+						// alert(copy_cat_str_dict_ver_id)
 
-						alert( "copy_version"+document.getElementById("copy_version").value)
-						alert( "copy_select_option"+document.getElementById("copy_select_option").value)
-						alert("copy_text_comment"+document.getElementById("copy_text_comment").value)
-						alert("copy_events_option"+document.getElementById("copy_events_option").value)
+						// alert( "copy_version"+document.getElementById("copy_version").value)
+						// alert( "copy_select_option"+document.getElementById("copy_select_option").value)
+						// alert("copy_text_comment"+document.getElementById("copy_text_comment").value)
+						// alert("copy_events_option"+document.getElementById("copy_events_option").value)
 					$.ajax
 					(
 						{

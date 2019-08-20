@@ -1,5 +1,5 @@
 <?php
-$SPEC_DICT =$_POST['SPEC_DICT'];
+$TMP_OPTION =$_POST['SPEC_DICT'];
 // 
 $curl = curl_init();
 
@@ -11,7 +11,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "<mpGet_Special_Dict>\n\t<parameters>\n\t\t<TMP_OPTION>".$SPEC_DICT."</TMP_OPTION>\n\t</parameters>\n</mpGet_Special_Dict>",
+  CURLOPT_POSTFIELDS => "<mpGet_Special_Dict>\n\t<parameters>\n\t\t<TMP_OPTION>".$TMP_OPTION."</TMP_OPTION>\n\t</parameters>\n</mpGet_Special_Dict>",
   CURLOPT_HTTPHEADER => array(
     "accept: application/xml",
     "cache-control: no-cache",

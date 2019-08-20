@@ -138,7 +138,7 @@ $('form#Auth').submit
 						timer: 1500
 					}
 				)
-				window.location.href="test.php?uid="+a;
+				window.location.href="check_auth.php?uid="+a;
 			}
 		 ).fail
 		(
